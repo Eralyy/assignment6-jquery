@@ -1,8 +1,6 @@
 $(document).ready(function () {
-  // Task 0
   console.log("jQuery is ready!");
 
-  // Task 1
   $("h1").css("color", "#1764bc");
   $("#headline").text("Hello! I am Yerali, a future web developer.");
   $(".intro").css("font-style", "italic");
@@ -17,7 +15,6 @@ $(document).ready(function () {
     $("h1, a").css("color", "#8cbcff");
   });
 
-  // Task 2
   $("#hide-status").click(function () {
     $("#status").hide();
   });
@@ -30,7 +27,6 @@ $(document).ready(function () {
     $("#status").toggle();
   });
 
-  // Task 3
   $("#fade-in").click(function () {
     $(".photos img").fadeIn(500);
   });
@@ -43,7 +39,6 @@ $(document).ready(function () {
     $(".photos img").fadeToggle(500);
   });
 
-  // Task 4
   $(".panel-title").click(function () {
     $(this).parent().next(".panel").slideToggle(400);
   });
@@ -56,7 +51,6 @@ $(document).ready(function () {
     $(".panel").slideUp(400);
   });
 
-  // Task 5
   $("#add-skill").click(function () {
     let skill = $("#new-skill").val().trim();
     if (skill !== "") {
@@ -75,12 +69,10 @@ $(document).ready(function () {
     $("#skill-list li:last-child").remove();
   });
 
-  // Task 6
   $("#change-link").click(function () {
     $("#social-link").attr("href", "https://github.com/Eralyy?tab=repositories");
   });
 
-  // Task 7
   $("#name").on("input", function () {
     $("#live-name").text($("#name").val());
   });
@@ -89,7 +81,6 @@ $(document).ready(function () {
     $("#live-email").text($("#email").val());
   });
 
-  // Task 8
   let skillsVisible = false;
 
   $("#animate-skills").click(function () {
