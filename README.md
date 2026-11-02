@@ -3,13 +3,13 @@
 **Name:** Yerali Karkinbayev  
 **Group:** IT-2501
 
-Open `index.html` in a browser. Internet is needed to load jQuery from the CDN.
+Open "index.html" in a browser. Internet is needed to load jQuery from the CDN.
 
 ## Part 1. Getting Started with jQuery
 
 ### Task 0. Setup
 
-jQuery is loaded from a CDN. The ready function prints `jQuery is ready!` in the browser console.
+jQuery is loaded from a CDN. The ready function prints "jQuery is ready!" in the browser console.
 
 ![Task 0](screenshots/task0.png)
 
@@ -49,13 +49,13 @@ Skills can be added to the end or beginning of the list. Remove Skill deletes th
 
 ### Task 6. Modifying Attributes
 
-The button changes the GitHub link to the repositories tab using `.attr()`.
+The button changes the GitHub link to the repositories tab using ".attr()".
 
 ![Task 6](screenshots/task6.png)
 
 ### Task 7. Form Interaction
 
-Name and email appear below the form while typing, using `.val()` and `.text()`.
+Name and email appear below the form while typing, using ".val()" and ".text()".
 
 ![Task 7](screenshots/task7.png)
 
