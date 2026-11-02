@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yerali Karkinbayev | Portfolio</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header id="profile">
+      <h1>Welcome to My Portfolio</h1>
+      <h2>Yerali Karkinbayev</h2>
+      <p id="headline">Web Technologies student</p>
+      <p class="intro">I study at Astana IT University and learn to build websites.</p>
+      <button id="light-theme">Light Theme</button>
+      <button id="dark-theme">Dark Theme</button>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a student interested in programming and sports.</p>
+      <ul>
+        <li>I enjoy playing volleyball.</li>
+        <li>I also like table tennis.</li>
+        <li>My goal is to improve my JavaScript skills.</li>
+      </ul>
+      <p id="status">Currently learning jQuery!</p>
+      <button id="hide-status">Hide</button>
+      <button id="show-status">Show</button>
+      <button id="toggle-status">Toggle</button>
+    </section>
+
+    <section id="gallery">
+      <h2>My Gallery</h2>
+      <p>Images used in my photography project.</p>
+      <div class="photos">
+        <img src="images/forest-path.jpg" alt="Forest path from my photography project" width="320" height="200">
+        <img src="images/city-skyline.jpg" alt="City skyline from my photography project" width="320" height="200">
+      </div>
+      <button id="fade-in">Fade In</button>
+      <button id="fade-out">Fade Out</button>
+      <button id="fade-toggle">Fade Toggle</button>
+    </section>
+
+    <section id="favorites">
+      <h2>My Favorites</h2>
+      <button id="open-panels">Open All</button>
+      <button id="close-panels">Close All</button>
+      <h3><button class="panel-title">My Favorite Sport</button></h3>
+      <div class="panel"><p>Volleyball. I like playing with friends.</p></div>
+      <h3><button class="panel-title">My Favorite Hobby</button></h3>
+      <div class="panel"><p>Table tennis. I enjoy practicing and improving my reaction.</p></div>
+      <h3><button class="panel-title">My Favorite Subject</button></h3>
+      <div class="panel"><p>Web Technologies. I like seeing the result of my code in a browser.</p></div>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+      <ul id="skill-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+      </ul>
+      <label for="new-skill">New skill</label>
+      <input id="new-skill" type="text" placeholder="Enter a skill">
+      <div>
+        <button id="add-skill">Add Skill</button>
+        <button id="prepend-skill">Prepend Skill</button>
+        <button id="remove-skill">Remove Skill</button>
+      </div>
+
+      <div id="skill-levels">
+        <h3>My Skill Levels</h3>
+        <p>HTML — 80%</p>
+        <div class="skill-track"><div id="html-bar" class="skill-bar"></div></div>
+        <p>CSS — 65%</p>
+        <div class="skill-track"><div id="css-bar" class="skill-bar"></div></div>
+        <p>JavaScript — 50%</p>
+        <div class="skill-track"><div id="js-bar" class="skill-bar"></div></div>
+        <button id="animate-skills">Animate My Skills</button>
+      </div>
+    </section>
+
+    <section id="social">
+      <h2>My Links</h2>
+      <p><a id="social-link" href="https://github.com/Eralyy">My GitHub Profile</a></p>
+      <button id="change-link">Show My Repositories</button>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Form</h2>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email">
+      </form>
+      <p>Name: <span id="live-name"></span></p>
+      <p>Email: <span id="live-email"></span></p>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+$(document).ready(function () {
+  // Task 0
+  console.log("jQuery is ready!");
+
+  // Task 1
+  $("h1").css("color", "#1764bc");
+  $("#headline").text("Hello! I am Yerali, a future web developer.");
+  $(".intro").css("font-style", "italic");
+
+  $("#light-theme").click(function () {
+    $("body").css({ "background-color": "#f3f4f6", "color": "#222" });
+    $("h1, a").css("color", "#1764bc");
+  });
+
+  $("#dark-theme").click(function () {
+    $("body").css({ "background-color": "#222", "color": "#f3f4f6" });
+    $("h1, a").css("color", "#8cbcff");
+  });
+
+  // Task 2
+  $("#hide-status").click(function () {
+    $("#status").hide();
+  });
+
+  $("#show-status").click(function () {
+    $("#status").show();
+  });
+
+  $("#toggle-status").click(function () {
+    $("#status").toggle();
+  });
+
+  // Task 3
+  $("#fade-in").click(function () {
+    $(".photos img").fadeIn(500);
+  });
+
+  $("#fade-out").click(function () {
+    $(".photos img").fadeOut(500);
+  });
+
+  $("#fade-toggle").click(function () {
+    $(".photos img").fadeToggle(500);
+  });
+
+  // Task 4
+  $(".panel-title").click(function () {
+    $(this).parent().next(".panel").slideToggle(400);
+  });
+
+  $("#open-panels").click(function () {
+    $(".panel").slideDown(400);
+  });
+
+  $("#close-panels").click(function () {
+    $(".panel").slideUp(400);
+  });
+
+  // Task 5
+  $("#add-skill").click(function () {
+    let skill = $("#new-skill").val().trim();
+    if (skill !== "") {
+      $("#skill-list").append($("<li>").text(skill));
+      $("#new-skill").val("");
+    }
+  });
+
+  $("#prepend-skill").click(function () {
+    let skill = $("#new-skill").val().trim();
+    if (skill !== "") {
+      $("#skill-list").prepend($("<li>").text(skill));
+      $("#new-skill").val("");
+    }
+  });
+
+  $("#remove-skill").click(function () {
+    $("#skill-list li:last-child").remove();
+  });
+
+  // Task 6
+  $("#change-link").click(function () {
+    $("#social-link").attr("href", "https://github.com/Eralyy?tab=repositories");
+    $("#social-link").text("My GitHub Repositories");
+  });
+
+  // Task 7
+  $("#name").on("input", function () {
+    $("#live-name").text($("#name").val());
+  });
+
+  $("#email").on("input", function () {
+    $("#live-email").text($("#email").val());
+  });
+
+  $("#contact-form").on("submit", function (event) {
+    event.preventDefault();
+  });
+
+  // Task 8
+  let skillsVisible = false;
+
+  $("#animate-skills").click(function () {
+    if (skillsVisible === false) {
+      $("#html-bar").stop().animate({ width: "80%" }, 800);
+      $("#css-bar").stop().animate({ width: "65%" }, 800);
+      $("#js-bar").stop().animate({ width: "50%" }, 800);
+      skillsVisible = true;
+    } else {
+      $(".skill-bar").stop().animate({ width: "0%" }, 800);
+      skillsVisible = false;
+    }
+  });
+});
