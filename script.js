@@ -61,7 +61,6 @@ $(document).ready(function () {
     let skill = $("#new-skill").val().trim();
     if (skill !== "") {
       $("#skill-list").append($("<li>").text(skill));
-      $("#new-skill").val("");
     }
   });
 
@@ -69,7 +68,6 @@ $(document).ready(function () {
     let skill = $("#new-skill").val().trim();
     if (skill !== "") {
       $("#skill-list").prepend($("<li>").text(skill));
-      $("#new-skill").val("");
     }
   });
 
@@ -80,7 +78,6 @@ $(document).ready(function () {
   // Task 6
   $("#change-link").click(function () {
     $("#social-link").attr("href", "https://github.com/Eralyy?tab=repositories");
-    $("#social-link").text("My GitHub Repositories");
   });
 
   // Task 7
@@ -92,21 +89,17 @@ $(document).ready(function () {
     $("#live-email").text($("#email").val());
   });
 
-  $("#contact-form").on("submit", function (event) {
-    event.preventDefault();
-  });
-
   // Task 8
   let skillsVisible = false;
 
   $("#animate-skills").click(function () {
     if (skillsVisible === false) {
-      $("#html-bar").stop().animate({ width: "80%" }, 800);
-      $("#css-bar").stop().animate({ width: "65%" }, 800);
-      $("#js-bar").stop().animate({ width: "50%" }, 800);
+      $("#html-bar").animate({ width: "80%" }, 800);
+      $("#css-bar").animate({ width: "65%" }, 800);
+      $("#js-bar").animate({ width: "50%" }, 800);
       skillsVisible = true;
     } else {
-      $(".skill-bar").stop().animate({ width: "0%" }, 800);
+      $(".skill-bar").animate({ width: "0%" }, 800);
       skillsVisible = false;
     }
   });
